@@ -13,6 +13,18 @@
     font-weight: 700 !important;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #06BBCC;
+  }
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -410,8 +422,8 @@
 
 /* Start section have-question */
 .have-question{
-  background-color: #e5e5e5;
-  padding: 47px;
+    background-color: rgb(254 254 254);
+    padding: 47px;
 }
 /* End section have-question */
 
@@ -567,3 +579,75 @@
   border-radius: 5px;
   border-left: 3px solid orange;
 }
+
+.visit-egypt{
+    background-color: #eaeaea;
+    padding: 30px;
+}
+
+
+.accordion {
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+  }
+
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Adds a horizontal line between the contents */
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+
+  /* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: auto;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
