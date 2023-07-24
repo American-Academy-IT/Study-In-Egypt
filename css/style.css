@@ -231,6 +231,10 @@
   font-weight: bold;
 }
 
+.visa-requirement {
+  padding-top: 30px;
+}
+
 .visa-requirement h6 span {
   color: #06BBCC;
 }
@@ -422,7 +426,7 @@
 
 /* Start section have-question */
 .have-question{
-    background-color: rgb(254 254 254);
+    background-color: #d7d7d7;
     padding: 47px;
 }
 /* End section have-question */
@@ -693,4 +697,9 @@
   
   .up.show {
     right: 10px;
+  }
+
+  footer h2{
+    color: #fff;
+    padding: 20px 0px;
   }
