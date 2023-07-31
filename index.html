@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap">
   <!--Font Awesome-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <!--Animate Css-->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -42,11 +42,11 @@
         <a href="#exam" class="nav-item nav-link">Exams</a>
         <a href="#vEgypt" class="nav-item nav-link">Visit Egypt</a>
         <a href="#vUsa" class="nav-item nav-link">Study In USA</a>
+        <button class="btn-theme" id="btnTheme">Dark Mode</button>
       </div>
     </div>
   </nav>
   <!--End nav-->
-
 
   <!--Start section home-->
   <section class="home" id="home">
@@ -76,7 +76,7 @@
                   <h1 class="display-3 text-white animated slideInDown">QS EGYPT UNIVERSITIES RANKING</h1>
                   <p class="fs-5 text-white mb-4 pb-2"><p class="fs-5 mb-4 pb-2">As well as six institutions featured in the <span>QS World University Rankings® 2021</span>, Egypt has all 20 representatives in the <span>QS Arab Region University Rankings</span>, including seven within the top 50.</p></p>
                   <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfK8ReVaEcOAX1K2nv6aAW4-AeBq2jZZp9_MNWj2CCQB9GbIQ/viewform" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Ask Question</a>
-                  <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contact</a>
+                  <a href="#footer" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contact</a>
                 </div>
               </div>
             </div>
@@ -87,12 +87,11 @@
   </section>
   <!--End section home-->
 
-
   <!--Start Section Study In Egypt-->
   <section class="study-in-egypt" id="study">
     <div class="container">
-      <h1 class="mb-5 text-center wow fadeInUp">STUDY IN EGYPT</h1>
-      <h5>There are several reasons why studying in Egypt can be a great <span>choice:</span></h5>
+      <h1 class="mb-5 text-center wow fadeInUp theme">STUDY IN EGYPT</h1>
+      <p class="title">There are several reasons why studying in Egypt can be a great <span>choice:</span></p>
       <p>1. <span>Rich history</span> and culture: Egypt is home to one of the world's oldest civilizations, with a rich history that spans over 5,000 years. Studying in Egypt allows you to immerse yourself in this ancient culture and explore iconic landmarks such as the Pyramids of Giza, the Sphinx, and the Valley of the Kings.</p>
       <p>2. <span>World-class</span> education: Egypt has a number of prestigious universities and educational institutions that offer high-quality education across various disciplines. These institutions are known for their research programs, academic excellence, and highly qualified faculty members.</p>
       <p>3. <span>Affordable</span> tuition fees: Compared to many other countries, studying in Egypt can be relatively affordable. Tuition fees at Egyptian universities are generally lower than those in Western countries, making it an attractive option for international students on a budget.</p>
@@ -115,11 +114,11 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h6 class="section-title bg-white text-start text-primary pe-3">Cost In Egypt</h6>
-                <h1 class="mb-4">How much does it cost to study in Egypt?</h1>
+                <h1 class="mb-4 theme">How much does it cost to study in Egypt?</h1>
                 <p class="mb-4">The cost of studying in Egypt can vary depending on the university, program, and level of study.</p>
                 <p class="mb-4">On average, tuition fees for international students range from $2,000 to $10,000 per year for undergraduate programs and $3,000 to $15,000 per year for graduate programs.</p>
                 <p class="mb-5">Additionally, living expenses, including accommodation, food, transportation, and other personal expenses, can range from $300 to $800 per month.</p>
-                <h6>Egypt's visa requirements</h6>
+                <p class="title">Egypt's visa requirements</p>
                 <div class="row gy-2 gx-4 mb-4">
                     <div class="col-sm-6">
                         <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Passport</p>
@@ -146,7 +145,7 @@
                       <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Supporting Documents</p>
                     </div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="#visa">Read More</a>
             </div>
         </div>
     </div>
@@ -160,7 +159,6 @@
         <h2>EXAMS</h2>
         <p>Exams in Egypt are an integral part of the education system and play a significant role in determining a student's academic performance and future opportunities.</p>
         <p>In Egypt, universities typically require students to take entrance <span>exams</span> or submit specific certificates for admission. Here are some common entrance exams and certificates required by universities in Egypt:</p>
-        <button class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</button>
       </div>
     </div>
   </section>
@@ -200,10 +198,10 @@
   <!--Start section visit-egypt-->
   <section class="visit-egypt" id="vEgypt">
     <div class="container">
-      <h2 class="text-center">VISIT EGYPT</h2>
+      <h1 class="text-center theme">VISIT EGYPT</h1>
       <div class="accordion-body">
         <div class="accordion">
-          <h1>Fast Facts</h1>
+          <h2>Fast Facts</h2>
           <hr>
           <div class="container">
           <div class="label">Fast Facts About Egypt</div>
@@ -295,54 +293,54 @@
   <!--End section visit-egypt-->
 
   <!--Start Section visa-requirement-->
-  <section class="visa-requirement">
+  <section class="visa-requirement" id="visa">
     <div class="container mb-5">
-      <h1 class="mb-5 text-center wow fadeInUp">Visa Requirements</h1>
-      <h6>To enter Egypt, most nationalities are required to obtain a visa. Here are the general <span>requirements</span> for an Egypt visa:</h6>
+      <h1 class="mb-5 text-center wow fadeInUp theme">Visa Requirements</h1>
+      <p class="title">To enter Egypt, most nationalities are required to obtain a visa. Here are the general <span>requirements</span> for an Egypt visa:</p>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>1-Passport</h6>
             <p>You must have a valid passport with at least six months of remaining validity</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>2-Visa Application Form</h6>
             <p>You need to complete an application form, which can be obtained from an Egyptian embassy or consulate or filled out online</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>3-Passport-sized Photos</h6>
             <p>You will need two recent passport-sized photos</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>4-Proof of Travel Arrangements</h6>
             <p>You may be asked to provide proof of your travel arrangements, such as flight tickets or hotel reservations</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>5-Proof of Accommodation</h6>
             <p>It is advisable to provide proof of accommodation during your stay in Egypt, such as hotel bookings or a letter of invitation if staying with friends or family</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>6-Financial Means</h6>
             <p>You may be required to show proof of sufficient funds to cover your expenses during your stay in Egypt</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>7-Visa Fee</h6>
             <p>There is usually a fee associated with the visa application process, which varies depending on your nationality and the type of visa you are applying for</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-6 col-xl-4">
           <div class="box">
             <h6>8-Supporting Documents</h6>
             <p>Depending on the purpose of your visit, you may need additional supporting documents such as a letter from your employer, an invitation letter from an Egyptian host, or proof of enrollment if you are a student</p>
@@ -355,13 +353,13 @@
   <!--End Section visa-requirement-->
 
   <!--Have A Question-->
-  <section class="have-question">
+  <section class="have-question" id="question">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="left">
             <div class="content">
-              <h1 class="mb-5 text-center">Have A Question?</h1>
+              <h1 class="mb-5 text-center theme">Have A Question?</h1>
               <p>If you have a question, do not hesitate to ask it <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfK8ReVaEcOAX1K2nv6aAW4-AeBq2jZZp9_MNWj2CCQB9GbIQ/viewform">HERE</a></p>
             </div>
           </div>
@@ -412,7 +410,6 @@
     </div>
   </footer>
   <!-- Footer End -->
-
 
   <!-- Back to Top -->
   <span class="up"><i class="fa-solid fa-arrow-up"></i></span>

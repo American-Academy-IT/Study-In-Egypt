@@ -1,9 +1,8 @@
 (function ($) {
   "use strict";
-    
+
   // Initiate the wowjs
   new WOW().init();
-
 
   // Sticky Navbar
   $(window).scroll(function () {
@@ -13,35 +12,6 @@
       $('.sticky-top').css('top', '-100px');
     }
   });
-    
-    
-  // Dropdown on mouse hover
-  const $dropdown = $(".dropdown");
-  const $dropdownToggle = $(".dropdown-toggle");
-  const $dropdownMenu = $(".dropdown-menu");
-  const showClass = "show";
-    
-  $(window).on("load resize", function() {
-    if (this.matchMedia("(min-width: 992px)").matches) {
-      $dropdown.hover(
-        function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
-            );
-        } else {
-            $dropdown.off("mouseenter mouseleave");
-        }
-  });
-
 
   // Header carousel
   $(".header-carousel").owlCarousel({
@@ -56,7 +26,6 @@
       '<i class="fa-solid fa-arrow-right"></i>'
       ]
   });
-
 
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
@@ -81,6 +50,9 @@
   });
 })(jQuery);
 
+
+
+// Open & Close Taps
 const accordion = document.getElementsByClassName('container');
 
 for (i=0; i<accordion.length; i++) {
@@ -89,19 +61,17 @@ for (i=0; i<accordion.length; i++) {
   })
 }
 
-
+// Back To Top Button
 let span = document.querySelector(".up");
 
 window.onscroll = function () {
-    console.log(this.scrollY);
-
-    if (this.scrollY >= 1000) {
-        span.classList.add("show");
-    } else {
-        span.classList.remove("show");
-    }
+  console.log(this.scrollY);
+  if (this.scrollY >= 1000) {
+    span.classList.add("show");
+  } else {
+    span.classList.remove("show");
+  }
 }
-
 
 span.onclick = function () {
     window.scrollTo({
@@ -109,3 +79,49 @@ span.onclick = function () {
         behavior: "smooth",
     });
 };
+
+// Dark & Light Mode
+let btnTheme = document.getElementById("btnTheme");
+let body = document.querySelector("body");
+let h1 = document.querySelectorAll(".theme");
+let vEgypt = document.getElementById("vEgypt");
+let question = document.getElementById("question")
+
+btnTheme.addEventListener("click", changeTheme);
+
+function changeTheme() {
+  if (btnTheme.textContent === "Dark Mode") {
+    body.style.backgroundColor = "#252525";
+    body.style.color = "#fff";
+    btnTheme.textContent = "Light Mode";
+    btnTheme.style.backgroundColor = "#fff";
+    btnTheme.style.color = "black";
+    vEgypt.style.backgroundColor = "black";
+    question.style.backgroundColor = "black";
+    whiteColors();
+  } else {
+    body.style.backgroundColor = "#fff";
+    body.style.color = "black";
+    btnTheme.textContent = "Dark Mode";
+    btnTheme.style.backgroundColor = "black";
+    btnTheme.style.color = "#fff";
+    vEgypt.style.backgroundColor = "#eaeaea";
+    question.style.backgroundColor = "#d7d7d7";
+    blackColors();
+  }
+}
+
+function whiteColors () {
+  for (let i = 0; i < h1.length; i++) {
+    h1[i].style.color = "#fff";
+  }
+}
+
+function blackColors () {
+  for (let i = 0; i < h1.length; i++) {
+    h1[i].style.color = "black";
+  }
+}
+
+
+
