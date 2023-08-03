@@ -67,6 +67,7 @@ body{
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
+  z-index: 3000;
 }
 
 .btn-sm-square {
@@ -345,6 +346,10 @@ body{
   color: #2bc5d4;
 }
 
+.exams-taps {
+  overflow: hidden;
+}
+
 .exams-taps .exam{
   padding: 20px;
   margin: 10px 0px;
@@ -399,7 +404,13 @@ body{
 /* Start Section visit-egypt */
 .visit-egypt{
   background-color: #eaeaea;
-  padding: 30px;
+  background-image: url("../img/visit-egypt.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 20px 0px;
+  overflow: hidden;
 }
 
 .accordion {
@@ -505,6 +516,7 @@ body{
 /* Start Section visa-requirment */
 .visa-requirement {
   padding-top: 30px;
+  overflow: hidden;
 }
 
 .visa-requirement h6 span {
@@ -546,6 +558,7 @@ body{
 .have-question{
   background-color: #d7d7d7;
   padding: 47px;
+  overflow: hidden;
 }
 /* End section have-question */
 

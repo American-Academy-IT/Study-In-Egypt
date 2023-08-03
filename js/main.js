@@ -84,7 +84,6 @@ span.onclick = function () {
 let btnTheme = document.getElementById("btnTheme");
 let body = document.querySelector("body");
 let h1 = document.querySelectorAll(".theme");
-let vEgypt = document.getElementById("vEgypt");
 let question = document.getElementById("question")
 
 btnTheme.addEventListener("click", changeTheme);
@@ -96,7 +95,6 @@ function changeTheme() {
     btnTheme.textContent = "Light Mode";
     btnTheme.style.backgroundColor = "#fff";
     btnTheme.style.color = "black";
-    vEgypt.style.backgroundColor = "black";
     question.style.backgroundColor = "black";
     whiteColors();
   } else {
@@ -105,7 +103,6 @@ function changeTheme() {
     btnTheme.textContent = "Dark Mode";
     btnTheme.style.backgroundColor = "black";
     btnTheme.style.color = "#fff";
-    vEgypt.style.backgroundColor = "#eaeaea";
     question.style.backgroundColor = "#d7d7d7";
     blackColors();
   }
